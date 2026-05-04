@@ -95,7 +95,60 @@ high_perf_stagnant = stagnant[stagnant["Performance Score"].isin(["Exceeds", "Fu
 | Horizontal bar — Attrition Rate by Job Role | Highest-turnover titles |
 | Bar chart — Performance Distribution (Stagnant employees) | Performance mix of employees stuck in the same role 5+ years |
 
-All visualisations were built with `seaborn` and `matplotlib`.
+All visualisations built with `seaborn` and `matplotlib`.
+
+---
+
+## 📊 Power BI Dashboard — 4 Pages
+
+The `.pbix` file contains four purpose-built report pages, each targeting a distinct HR decision-making area.
+
+---
+
+### Page 1 — Attrition & Retention
+
+**KPI Cards:** Total Employees · Attrited Employees · Active Employees · Attrition Rate  
+
+| Visual | What it answers |
+|---|---|
+| Bar chart — Attrition Rate by Department | Which department has the highest churn? |
+| Donut chart — Termination Type | Are people leaving voluntarily or being let go? |
+| Line chart — Attrition Over Time (Year/Month) | Is attrition trending up or down over time? |
+| Column chart — Attrition by Employee Type | Do Full-Time, Part-Time, and Contract employees churn at different rates? |
+| Slicer — PayZone filter | Drill into attrition patterns by compensation band |
+
+---
+
+### Page 2 — Compensation
+
+| Visual | What it answers |
+|---|---|
+| Column chart — Salary Distribution (buckets) | How is the overall workforce distributed across salary ranges? |
+| Column chart — Avg Salary by Department | Which departments pay the most and least on average? |
+| Clustered column chart — Gender Pay by Department | Is there a visible pay gap between male and female employees at the department level? |
+| Scatter chart — Salary vs. Performance | Do higher performers actually earn more, or is there a disconnect? |
+
+---
+
+### Page 3 — Performance
+
+| Visual | What it answers |
+|---|---|
+| Donut chart — Performance Distribution | What share of the workforce is on PIP vs. Fully Meets vs. Exceeds? |
+| Pivot table — PIP Count · Needs Improvement · High Performers by Department | Which departments have the most at-risk employees? |
+| Scatter chart — Performance vs. Tenure (sized by salary) | Does longer tenure correlate with better performance — or does it plateau? |
+| Column chart — Performance vs. Attrition Rate | Are poor performers leaving, or are high performers leaving too? |
+
+---
+
+### Page 4 — Headcount
+
+| Visual | What it answers |
+|---|---|
+| Treemap — Headcount by Department | Where is the workforce concentrated? |
+| Stacked area chart — Employee Type Mix Over Time | How has the Full-Time / Part-Time / Contract split evolved across hiring periods? |
+| Map — Headcount by State | What is the geographic footprint of the workforce? |
+| Bar chart — Span of Control | How many direct reports does each supervisor manage? Identifies overloaded managers. |
 
 ---
 
@@ -127,7 +180,7 @@ employee-performance-analysis/
 |---|---|
 | Python 3 | Core analysis language |
 | pandas | Data manipulation, groupby, window-equivalent transforms |
-| seaborn / matplotlib | Visualisation |
+| seaborn | matplotlib | Visualisation |
 | Power BI | Interactive dashboard (`.pbix`) |
 | Jupyter Notebook | Analysis environment |
 
