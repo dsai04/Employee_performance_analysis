@@ -25,6 +25,8 @@ Built to demonstrate **window function logic in Python** (ranking, partitioning,
 **Departments covered:** Production, Sales, IT/IS, Executive Office, Software Engineering, Admin Offices  
 **Performance tiers:** PIP → Needs Improvement → Fully Meets → Exceeds
 
+**Note: `MonthlyIncome`** is a derived field, calculated from PayZone × EmployeeType multipliers. It reflects compensation tier logic, not actual recorded salaries. Salary-based findings should be interpreted as structural patterns, not precise figures.
+
 ---
 
 ## ❓ Business Questions Answered
@@ -32,7 +34,7 @@ Built to demonstrate **window function logic in Python** (ranking, partitioning,
 1. **Salary Ranking** — Rank employees within each department by monthly income (dense ranking, no gaps)
 2. **Salary vs. Department Average** — How far above or below average is each employee, in absolute $ and percentage?
 3. **Top 10% Earners** — Which employees are in the top decile company-wide, and how are they distributed across departments?
-4. **Attrition Rate by Department and Job Role** — Where is the company losing the most people, and which roles are highest risk?
+4. **Attrition Rate by Department and Job Role** — Where is the company losing the most people, and which roles are at the highest risk?
 5. **Stagnation Detection** — Which active employees have been in the same role for more than 5 years, and how many of those are high performers who may be flight risks?
 
 ---
@@ -167,10 +169,11 @@ employee-performance-analysis/
 
 ## 💡 Key Findings (What the Data Shows)
 
-- **Salary inequality is department-specific** — some employees earn 57%+ above their department average while others sit 45% below, within the *same* department and pay zone
+- **Salary spread within departments** is driven by employee type (Full-Time vs Part-Time vs Contract) rather than role seniority — average salaries cluster between $4.1K and $4.7K across all departments, a 15% spread company-wide.
 - **Attrition is not evenly distributed** — certain job roles carry disproportionately high attrition rates, suggesting structural issues beyond pay
-- **High-performer stagnation is a real, quantifiable risk** — a significant portion of active employees with 5+ year tenure and strong performance scores have received no visible promotion signal, making them a defined flight-risk cohort
-- **Top 10% earners cluster in specific departments** — executive and engineering functions dominate, with minimal representation from production
+- **High-performer stagnation is a real, quantifiable risk** — 1,223 active employees (40.8% of the workforce) with 5+ year tenure and Fully Meets or Exceeds ratings show no promotion signal, making them a defined and quantifiable flight-risk cohort.
+- **Top 10% earners** are concentrated in Production (230 employees) due to its dominant headcount (2,020 of 3,000 employees). When adjusted for department size, Software Engineering and IT/IS show higher representation rates — meaning smaller departments punch above their weight in high earners.
+- **Attrition** affects all performance tiers — PIP employees leave at 27%, but Exceeds performers still attrit at 17%, a narrow 10-point spread that signals a systemic retention problem beyond performance management.
 
 ---
 
