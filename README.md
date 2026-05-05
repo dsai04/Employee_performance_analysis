@@ -17,7 +17,7 @@ Built to demonstrate **window function logic in Python** (ranking, partitioning,
 
 | Field | Detail |
 |---|---|
-| **Source** | HR employee records dataset |
+| **Source** | HR employee records dataset (https://www.kaggle.com/datasets/ravindrasinghrana/employeedataset/data) |
 | **Rows** | 3,000 employees |
 | **Columns** | 36 features |
 | **Key fields** | `EmpID`, `DepartmentType`, `Title`, `PayZone`, `EmployeeType`, `Performance Score`, `StartDate`, `ExitDate`, `DOB` |
