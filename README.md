@@ -13,6 +13,12 @@ Built to demonstrate **window function logic in Python** (ranking, partitioning,
 
 ---
 
+## Overview
+
+![Overview](.png)
+
+---
+
 ## 🗂️ Dataset
 
 | Field | Detail |
