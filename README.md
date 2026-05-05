@@ -15,7 +15,7 @@ Built to demonstrate **window function logic in Python** (ranking, partitioning,
 
 ## Overview
 
-![Overview](.png)
+![Overview](overview.png)
 
 ---
 
